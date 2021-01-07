@@ -6,6 +6,7 @@ public class MessageBean {
     private double y0;
     private double y1;
     private String color;
+    private String thickness;
 
     public double getX0() {
         return x0;
@@ -45,5 +46,13 @@ public class MessageBean {
 
     public void setColor(String color) {
         this.color = color;
+    }
+
+    public String getThickness() {
+        return thickness;
+    }
+
+    public void setThickness(String thickness) {
+        this.thickness = thickness;
     }
 }
