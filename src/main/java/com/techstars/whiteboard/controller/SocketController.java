@@ -11,7 +11,7 @@ public class SocketController {
 
     @MessageMapping("/user-all")
     @SendTo("/topic/user")
-    public MessageBean send(@Payload MessageBean message) {
+    public MessageBean sendToAll(@Payload MessageBean message) {
         return message;
     }
 }
