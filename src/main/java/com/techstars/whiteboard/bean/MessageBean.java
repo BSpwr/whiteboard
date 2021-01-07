@@ -1,23 +1,49 @@
 package com.techstars.whiteboard.bean;
 
-
 public class MessageBean {
-    private String name;
-    private String message;
+    private double x0;
+    private double x1;
+    private double y0;
+    private double y1;
+    private String color;
 
-    public String getName() {
-        return name;
+    public double getX0() {
+        return x0;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setX0(double x0) {
+        this.x0 = x0;
     }
 
-    public String getMessage() {
-        return message;
+    public double getX1() {
+        return x1;
     }
 
-    public void setMessage(String message) {
-        this.message = message;
+    public void setX1(double x1) {
+        this.x1 = x1;
+    }
+
+    public double getY0() {
+        return y0;
+    }
+
+    public void setY0(double y0) {
+        this.y0 = y0;
+    }
+
+    public double getY1() {
+        return y1;
+    }
+
+    public void setY1(double y1) {
+        this.y1 = y1;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
     }
 }

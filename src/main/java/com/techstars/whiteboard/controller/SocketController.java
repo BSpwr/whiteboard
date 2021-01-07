@@ -10,7 +10,7 @@ import org.springframework.stereotype.Controller;
 public class SocketController {
 
     @MessageMapping("/user-all")
-    @SendTo("/topic/user")
+    @SendTo("/topic/msg")
     public MessageBean sendToAll(@Payload MessageBean message) {
         return message;
     }
