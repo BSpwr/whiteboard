@@ -17,8 +17,12 @@ public class SocketController {
     }
 
     @MessageMapping("/whiteboard/line/{sessionID}")
-    public MessageBean sendToAll(@Payload MessageBean message, @DestinationVariable String sessionID) {
+    public void sendLine(@Payload MessageBean message, @DestinationVariable String sessionID) {
         simpMessagingTemplate.convertAndSend("/topic/whiteboard/line/" + sessionID, message);
-        return message;
+    }
+
+    @MessageMapping("/whiteboard/clear/{sessionID}")
+    public void sendClear(@Payload String message, @DestinationVariable String sessionID) {
+        simpMessagingTemplate.convertAndSend("/topic/whiteboard/clear/" + sessionID, message);
     }
 }
